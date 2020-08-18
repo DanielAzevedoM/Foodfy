@@ -15,6 +15,8 @@ As receitas são consumidas através do arquivo Data.js, usando o template view 
 Para clonar utilize: git clone "https://github.com/DanielAzevedoM/Foodfy" </br>
 e após o clone, dentro do projeto utilize o comando: yarn ou npm para baixar as dependências.
 
+PS: Ainda não está finalizada.
+
 ## :rocket: Tecnologias Utilizadas no projeto
 - NodeJS
 - Express
