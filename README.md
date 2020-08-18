@@ -1,7 +1,7 @@
 # Foodfy
 
 <h1 align="center">
-    <img alt="FoodyFy" src="https://i.imgur.com/EmMB0Ur.jpg width="400px" />
+    <img alt="FoodyFy" src="https://i.imgur.com/ozV5HOw.jpg width="400px" />
 </h1>
                                                                          
 ## :information_source: Sobre
@@ -15,8 +15,7 @@ As receitas são consumidas através do arquivo Data.js, usando o template view 
 Para clonar utilize: git clone "https://github.com/DanielAzevedoM/Foodfy" </br>
 e após o clone, dentro do projeto utilize o comando: yarn ou npm para baixar as dependências.
 
-## :rocket: Tecnologias Abordadas no Bootcamp
-
+## :rocket: Tecnologias Utilizadas no projeto
 - NodeJS
 - Express
 - Nunjucks
