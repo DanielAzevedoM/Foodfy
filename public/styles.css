@@ -6,6 +6,7 @@
 
 body{
     font-family: roboto;
+ 
 }
 
 
@@ -31,6 +32,7 @@ body{
   
 }
 .links a{
+
     margin-left: 30px;
     text-decoration: none;
     color:#111111 
@@ -38,48 +40,58 @@ body{
 }
 
 .links a:hover{
+
     color: rgba(110, 112, 119, 0.801);
+
 }
 
 .retangle{
-    background: #FBDFDB;
+
+    background:#FBDFDB;
     border-radius: 30px;
     max-width: 940px;
     height: 366px;
     margin: 0 auto;
     position: relative;
+
 }
 
 .retangle h1{
+
     position: absolute;
     font-size: 32px;
     left: 60px;
     top: 117px;
+
 }
 
 .retangle p{
+
     position: absolute;
     font-size: 18px;
     left: 60px;
     top: 165px;
     width: 316px;
+
 }
 
+
 .retangle img{
+
     position: absolute;
     left: 624px;
     top: 66px;
     width: 216px;
     height: 300px;
+
 }
 
 .acess{
+
     padding-top: 50px;
     max-width: 940px;
     margin: 0 auto;
     
-    
-
 }
 
 .title{
@@ -88,15 +100,17 @@ body{
     font-size: 24px;
     color: #111111;
     padding-bottom: 20px;
+
 }
 
 .cards {
+
     max-width: 800px;
-   
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
     padding-bottom: 15px;
+
 }
 
 .card{
@@ -107,9 +121,11 @@ body{
 }
 
 .card-img img{
+
     border-radius: 15px 15px 15px 15px;
     width: 100%;
     cursor: pointer;
+
 }
 
 
@@ -125,28 +141,114 @@ body{
     font-size: 18px;
     color: #111111;
     cursor: pointer;
+
 }
 
 .card-title .title-hover:hover{
+
     color: rgba(110, 112, 119, 0.801);
+
 }
 
-.card-title .by{
+.card-title .by-card{
 
     padding-top: 5px;
     font-family: Roboto;
     color: #777777;
-    font-size: 14px
+    font-size: 14px;
+
 }
 
 footer{
+
     background: #EEEEEE;
     text-align: center;
 }
 
 footer p{
+
     padding: 23px;
     font-family: Roboto-Regular;
     font-size: 14px;
     color: #999999;
+
+}
+
+.modalOverlay{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    visibility: hidden;
+
+}
+
+.modal{
+
+    position: relative;
+    background: #FFFFFF;
+    border-radius: 16px;
+    margin: 335px auto;
+    width: 660px;
+    height: 413px;
+    
+}
+
+.modalOverlay.active{
+
+    visibility: visible;
+    opacity: 1;
+
+}
+
+.img-modal{
+
+    padding: 30px 30px 20px 30px;
+    position: absolute;
+    width: 600px;
+    height: 200px;
+}
+
+.img-modal img{
+
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    
+}
+
+.title-modal {
+
+    position: absolute;
+    font-family: Roboto;
+    font-size: 24px;
+    color: #111111;
+    top: 250px;
+    text-align: center;
+    left: 164px;
+    width: 332px;
+ 
+}
+
+
+
+.title-modal .by{
+
+    padding-top: 5px;
+    font-family: Roboto;
+    color: #777777;
+    font-size: 18px;
+    color: #777777;
+    
+}
+
+.close-modal{
+    position: absolute;
+    top: 364px;
+    left: 281px;
+    font-family: Roboto;
+    font-size: 16px;
+    color: #999999;
+    cursor: pointer;
 }

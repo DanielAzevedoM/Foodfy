@@ -26,7 +26,7 @@
 
                 <div class="card-title">
                     <p class="title-hover">{{item.title}}</p>
-                    <p class="by">{{item.by}}<p>
+                    <p class="by-card">{{item.by}}<p>
                 </div>
             </div>
         {%endfor%}
@@ -36,4 +36,23 @@
         <p>Todos direitos reservados, receitas Foodfy.</p>
     </footer>
 
+     <div class="modalOverlay">
+            <div class="modal">
+                <div class="img-modal">
+                    <img id="mImg"src="" alt="">
+                </div>  
+
+                <div class="title-modal">
+                    <p class="mTitle">{{item.title}}</p>
+                    <p class="by"> por Daniel Azevêdo</p>
+                </div>
+
+                <div class="close-modal">
+                    <p class=".button-close">Fechar modal  </p>
+                </div>
+            </div>
+        
+
+    </div> 
+</div> 
 {% endblock %}

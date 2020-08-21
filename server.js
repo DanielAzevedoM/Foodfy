@@ -16,9 +16,15 @@ nunjucks.configure("views", {
     noCache: true,
 })
 
+
+
+
+
 server.get('/', (req, res) =>{
+  
     return res.render("home", { items: cards})
 })
+
 
 server.listen(3000, function(){
     console.log("Servidor Iniciado!")

@@ -2,8 +2,8 @@ module.exports = [
     {
         id:"asinhas",
         img: "./img/asinhas.png",
-        title: "Asinhas fritas",
-        by: "Gilvania Soares"
+        title: "Asinhas de frango ao barbecue",
+        by: "Celina Soares"
     },
     {
         id:"Lasanha",
@@ -15,12 +15,12 @@ module.exports = [
         id:"Pizza",
         img: "./img/pizza.png",
         title: "Pizza",
-        by: "Gilvania Soares"
+        by: "Zayon Azevêdo"
     },
     {
         id:"Hamburger",
         img: "./img/burger.png",
-        title: "Hamburger Bovino",
+        title: "Triplo bacon burger",
         by: "Celina Soares"
     },
     {
@@ -32,7 +32,7 @@ module.exports = [
     {
         id:"espaguete",
         img: "./img/espaguete.png",
-        title: "Espaguete",
+        title: "Espaguete ao alho",
         by: "Davi Gonçalves"
     }
 ]
