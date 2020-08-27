@@ -1,0 +1,75 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+
+    <title>{{item.title}} - ingredientes</title>
+
+{%endblock%}
+
+{% block content %} 
+
+
+<div class="content">
+
+   <div class="ingredient-img">
+       <img src="{{item.image}}" alt="">
+   </div>
+    <div class="ingredient-title">
+        <p class="iTitle1">{{item.title}}</p>
+        <p class="iTitle2">por {{item.author}}</p>
+    </div>
+
+    <div class="recipe-ingredients">
+        <div class="ingredients-information">
+            <p class="title-ul">Ingredientes</p>
+            <p class="ocult-ul" id="Button-ocult" >Esconder</p>
+        </div>
+
+        <div class="list-ingredients">
+           {% for ingredients in item.ingredients %}
+            <ul>
+                <li>{{ingredients}}</li>  
+            </ul>
+            {% endfor %}
+        </div> 
+
+    </div>
+
+
+    <div class="how-to-prepare">
+
+        <div class="ingredients-information">
+            <p class="title-how-prepare">Modo de preparo</p>
+            <p class="ocult-prepare" id="Button-ocult">Esconder</p>
+        </div>
+
+        <div class="how-prepare" >
+           {% for preparation in item.preparation %}
+            <ul>
+                <li>{{preparation}}</li>  
+            </ul>
+            {% endfor %}
+        </div> 
+    </div>
+
+     <div class="additional-information">
+
+        <div class="information-title">
+            <p class="title-information">Informações Adicionais</p>
+            <p class="ocult-information" id="Button-ocult">Esconder</p>
+        </div>
+
+        <div class="information" >
+
+            <ul>
+                <li>{{item.information}}</li>  
+            </ul>
+         
+        </div> 
+
+    </div>
+
+   
+</div>
+
+{% endblock %}

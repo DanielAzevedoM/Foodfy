@@ -1,25 +1,24 @@
 {% extends "layout.njk" %}
-
 {% block head %}
-    <title>Foodfy - Home</title>
+    <title>FoodFy - Receitas</title>
 {% endblock %}
 
-{% block content %}
-
+{% block content %} 
 <div class="content">
-    <div class="retangle">
-        <h1>As melhores receitas</h1>
-        <p>Aprenda a construir os melhores pratos com receitas criadas por profissionais do mundo inteiro.</p>
-        <img src="./img/chef.png" alt="retangle-img">
-    </div>
+    <div class="cards">
+        {% for item in items%}
+            <div class="card" id="{{item.id}}">
+                <div class="card-img">
+                    <img src="{{item.image}}" alt="image of {{item.id}}">
+                </div>
 
-
-    <div class="acess">
-        <div class="title-retangle">
-            <h3>Mais acessadas</h3>
-        </div>
+                <div class="card-title">
+                    <p class="title-hover">{{item.title}}</p>
+                    <p class="by-card">{{item.author}}<p>
+                </div>
+            </div>
+        {%endfor%}
     </div>
-   
 
     <div class="cards">
         {% for item in items%}
@@ -35,6 +34,6 @@
             </div>
         {%endfor%}
     </div>
+    
 </div>
-
-{% endblock %}
+{% endblock%}}

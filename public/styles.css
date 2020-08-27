@@ -5,25 +5,35 @@
 }
 
 body{
-    font-family: roboto;
+    position: relative;
+    margin: 0 auto;
+    font-family: roboto; 
  
 }
 
+header{
+
+    max-width: 940px;
+    margin: 0 auto;
+    
+}
 
 .menu{
-    margin: 0 350px;
-    text-align: center;
+  
     display: grid;
     padding: 38px 36px 36px 36px;
     grid-template-columns: 1fr 1fr;  
-    max-width: 500px;
+    width: 350px;
+    
 
 }
 
 .img-logo img{
+    cursor: pointer;
     text-align: center;
     width: 90.6px;
     height: 26.9px;
+
 }
 
 .links{
@@ -49,7 +59,6 @@ body{
 
     background:#FBDFDB;
     border-radius: 30px;
-    max-width: 940px;
     height: 366px;
     margin: 0 auto;
     position: relative;
@@ -89,12 +98,11 @@ body{
 .acess{
 
     padding-top: 50px;
-    max-width: 940px;
     margin: 0 auto;
     
 }
 
-.title{
+.title-retangle{
 
     font-family: Roboto;
     font-size: 24px;
@@ -117,17 +125,18 @@ body{
     
     width: 300px;
     display: grid;
-  
+    
+    
 }
 
 .card-img img{
 
+    height: 140px;
     border-radius: 15px 15px 15px 15px;
     width: 100%;
     cursor: pointer;
 
 }
-
 
 .card-title{
 
@@ -161,12 +170,15 @@ body{
 
 footer{
 
+    margin-top: 15px;
     background: #EEEEEE;
     text-align: center;
+    width: 100%;
+
 }
 
 footer p{
-
+    
     padding: 23px;
     font-family: Roboto-Regular;
     font-size: 14px;
@@ -174,81 +186,179 @@ footer p{
 
 }
 
-.modalOverlay{
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    visibility: hidden;
+
+.title{
+
+    padding-left: 75px;
+    padding-top: 24px;
+    padding-bottom: 20px;
 
 }
 
-.modal{
+.title h1{
 
-    position: relative;
-    background: #FFFFFF;
-    border-radius: 16px;
-    margin: 335px auto;
-    width: 660px;
-    height: 413px;
+    font-family: Roboto;
+    font-size: 24px;
+    color: #111111;
+
+}
+
+.text-content {
+
+    margin-right: 20px;
+    width: 100%;
+    padding-left: 75px;
+    font-family: Roboto;
+    font-size: 18px;
+    color: #444444;
+    line-height: 28px;
+
+}
+
+.texts{
+
+    margin: 0 auto;
+    max-width: 940px;
+    padding-right: 110px;
+    background: pink;
+    border-radius: 30px;
+    padding-bottom: 30px ;
     
 }
 
-.modalOverlay.active{
+.content{
 
-    visibility: visible;
-    opacity: 1;
+    margin: 0 auto;
+    max-width: 940px;
+   
+        
+}
+
+.content-error{
+  
+    margin: 10% auto;
+    text-align: center;
+    padding-bottom: 20%;
 
 }
 
-.img-modal{
-
-    padding: 30px 30px 20px 30px;
-    position: absolute;
-    width: 600px;
-    height: 200px;
-}
-
-.img-modal img{
+.ingredient-img img{
 
     width: 100%;
-    height: 100%;
     border-radius: 15px;
     
 }
 
-.title-modal {
+.ingredient-title{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
 
-    position: absolute;
+.iTitle1{
+    font-family: Roboto;
+    font-size: 36px;
+    color: #111111;
+}
+
+.iTitle2{
+
+    font-family: Roboto;
+    font-size: 20px;
+    color: #777777;
+}
+
+.ingredients-information{
+    max-width: 280px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.title-ul{
+
+    width: 140px;
     font-family: Roboto;
     font-size: 24px;
     color: #111111;
-    top: 250px;
-    text-align: center;
-    left: 164px;
-    width: 332px;
- 
+    margin-left: 20px;
+}
+
+#Button-ocult{
+    cursor: pointer;
+    margin-top: 11px;
+    text-decoration: none;
+    font-family: Roboto;
+    font-size: 12px;
+    color: #999999;
+}
+
+.list-ingredients{
+    padding-top: 20px;
+    visibility: visible;
+    font-family: Roboto;
+    font-size: 18px;
+    color: #444444;
+    line-height: 28px;
 }
 
 
-
-.title-modal .by{
-
-    padding-top: 5px;
-    font-family: Roboto;
-    color: #777777;
-    font-size: 18px;
-    color: #777777;
+.list-ingredients.active{
+    visibility: hidden;
     
 }
 
-.close-modal{
-    position: absolute;
-    top: 364px;
-    left: 281px;
+.how-to-prepare{
+    padding-top: 39px;
+    text-align: left;
+    
+}
+
+.title-how-prepare{
     font-family: Roboto;
-    font-size: 16px;
-    color: #999999;
-    cursor: pointer;
+    font-size: 24px;
+    color: #111111;
+    width: 190px;
+    margin-left: 20px;
+}
+
+.how-prepare{
+    
+    padding-top: 20px;
+    visibility: visible;
+    font-family: Roboto;
+    font-size: 18px;
+    color: #444444;
+    line-height: 28px;
+
+}
+.how-prepare.active{
+    visibility: hidden;
+    
+}
+
+.information-title{
+    padding-top: 30px;
+    max-width: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.title-information{
+    font-family: Roboto;
+    font-size: 24px;
+    color: #111111;
+    width: 260px;
+    margin-left: 20px;
+}
+
+.information{
+    padding-top: 20px;
+    font-family: Roboto;
+    font-size: 18px;
+    color: #444444;
+    line-height: 28px;
+}
+
+.information.active{
+    visibility: hidden;
 }

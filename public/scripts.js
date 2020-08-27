@@ -1,33 +1,62 @@
-const modalOverlay = document.querySelector('.modalOverlay')
-
-const imageModal = document.querySelector('.image-modal')
+const img = document.querySelector('.img-logo img')
 
 const cards = document.querySelectorAll('.card')
 
+const ocultButton = document.querySelector('.ocult-ul')
+
+const ocultButton2 = document.querySelector('.ocult-prepare')
+
+const ocultButton3 = document.querySelector('.ocult-information')
+
+const listIngredients = document.querySelector('.list-ingredients')
+
+const howPrepare = document.querySelector('.how-prepare')
+
+const information = document.querySelector('.information')
 
 for (let i = 0; i < cards.length; i++) {
     const card = cards[i]
 
     card.addEventListener("click", function(){   
+        const cardId = i
 
-        const imgElement = card.querySelector(".card-img img").src
-        const titleElement = card.querySelector(".title-hover").innerHTML
-        const byElement = card.querySelector(".by-card").innerHTML
-        
-        
-        modalOverlay.classList.add("active")
-        modalOverlay.querySelector(".mTitle").innerHTML= `${titleElement}`
-        modalOverlay.querySelector(".by").innerHTML= `${byElement}`
-        modalOverlay.querySelector("#mImg").src=`${imgElement}`
-           
-
-    }) 
+        window.location.href=`/recipes/${cardId}`
+     }) 
     
 }
 
-document.querySelector('.close-modal').addEventListener("click", function(){
-    modalOverlay.classList.remove('active')
-    
+img.addEventListener("click", function(){
+
+    window.location.href = `/`
+
 })
+
+
+
+ocultButton.addEventListener("click", function () {
+    if (listIngredients.classList.contains('active')) {
+        listIngredients.classList.remove('active')
+    } else {
+        listIngredients.classList.add('active')
+    }
+})  
+  
+ocultButton2.addEventListener("click", function () {
+    if (howPrepare.classList.contains('active')) {
+        howPrepare.classList.remove('active')
+    } else {
+        howPrepare.classList.add('active')
+    }
+})  
+  
+ocultButton3.addEventListener("click", function () {
+    if (information.classList.contains('active')) {
+        information.classList.remove('active')
+    } else {
+        information.classList.add('active')
+    }
+})  
+
+
 
 
