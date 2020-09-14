@@ -8,7 +8,7 @@
 Uma página sobre receitas de comidas, feita através do desafio proposto do bootcamp LaunchBase.
 
 ## :information_source: Funcionalidades:
-Consiste em um pequeno site referente ao ramo alimentício, que contém 3 páginas,a principal que é essa da imagem acima, outra que seria uma biografia e por ultimo a página que lista somente as receitas e ao clicar em alguma, irá abrir um modal contendo as informações sobre tal receita.
+Consiste em um pequeno site referente ao ramo alimentício, que contém 3 páginas,a principal que é essa da imagem acima, outra que seria uma biografia e por ultimo a página que lista somente as receitas e ao clicar em alguma, irá uma página com todas as informações sobre a receita.
 
 As receitas são consumidas através do arquivo Data.js, usando o template view nunjucks.
 
